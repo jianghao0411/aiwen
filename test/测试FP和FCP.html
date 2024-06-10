@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试FP和FCP</title>
+    <script src="../dist/index.js"></script>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+<div style="display: none">
+    111
+</div>
+<div style="visibility: hidden">
+    111
+</div>
+<div></div>
+<div style="background: yellow"></div>
+<div style="background: yellow; height: 30px"></div>
+<div>
+<!--  在网络很慢的情况下，FCP要比FP慢  -->
+    <img src="https://img1.baidu.com/it/u=1168646157,690235958&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500">
+</div>
+<!--<div>-->
+<!--    111-->
+<!--</div>-->
+<script>
+    FCP();
+</script>
+</body>
+</html>
